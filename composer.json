@@ -1,5 +1,5 @@
 {
-    "name": "sultonov/yii2-jscropper",
+    "name": "sultonov/yii2-cropper",
     "description": "Yii2 framework widget for uploading and cropping images",
     "keywords": ["yii2", "extension", "widget", "cropper", "jscropper", "image", "jquery", "plugin"],
     "type": "yii2-extension",
