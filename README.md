@@ -75,8 +75,7 @@ public function actions()
         'upload-photo' => [
             'class' => UploadAction::className(),
             'url' => '',
-            'prefixPath' => Yii::getAlias('@assets_url/product/'),
-            'path' => '@assets/product/',
+            'path' => 'some-path',
         ]
     ];
 }
