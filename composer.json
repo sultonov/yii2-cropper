@@ -6,12 +6,12 @@
     "require": {
         "yiisoft/yii2": "*",
         "yiisoft/yii2-imagine": "*",
-        "bower-asset/jquery": ">=1.11.*"
+        "bower-asset/jquery": "*"
     },
     "require-dev": {
         "yiisoft/yii2": "*",
         "yiisoft/yii2-imagine": "*",
-        "bower-asset/jquery": ">=1.11.*"
+        "bower-asset/jquery": "*"
     },
     "license": "MIT",
     "authors": [
