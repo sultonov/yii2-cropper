@@ -1,0 +1,29 @@
+{
+    "name": "sultonov/yii2-jscropper",
+    "description": "Yii2 framework widget for uploading and cropping images",
+    "keywords": ["yii2", "extension", "widget", "cropper", "jscropper", "image", "jquery", "plugin"],
+    "type": "yii2-extension",
+    "require": {
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-imagine": "*",
+        "bower-asset/jquery": ">=1.11.*"
+    },
+    "require-dev": {
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-imagine": "*",
+        "bower-asset/jquery": ">=1.11.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yura Sultonov",
+            "email": "yura_sultonov@mail.ru",
+            "homepage": "https://sultonov.github.io/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "sultonov\\cropper\\": "src"
+        }
+    }
+}
