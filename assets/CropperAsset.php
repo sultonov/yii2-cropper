@@ -12,7 +12,7 @@ class CropperAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vendor/sultonov/cropper/web/';
+    public $sourcePath = '@sultonov/cropper/web/';
 
     /**
      * @inheritdoc
