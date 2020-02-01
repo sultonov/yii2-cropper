@@ -2,6 +2,8 @@ Yii2 Cropper
 ===========
 Yii-Framework extension for uploading and cropping images based on [CropperJs](https://fengyuanchen.github.io/cropperjs/).
 
+Readme file in uzbek language: [README_UZ.MD](README_UZ.md)
+
 Installation
 ------------
 
