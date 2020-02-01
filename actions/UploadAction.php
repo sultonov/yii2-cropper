@@ -71,8 +71,18 @@ class UploadAction extends Action
                 $x = intval($request->post('x'));
                 $y = intval($request->post('y'));
                 $image = Image::getImagine()->open($file->tempName . $request->post('filename'));
-                if (-$x + $width > $image->getSize()->getWidth() || $x > $image->getSize()->getWidth()){
+                if ($x + $width <= 0 || $x > $image->getSize()->getWidth()){
                     $image = Image::getImagine()->create(new Box($width, $height));
+                }
+                elseif ($x < 0 && $width + $x > $image->getSize()->getWidth()){
+                    $image = Image::crop(
+                        $file->tempName . $request->post('filename'),
+                        $image->getSize()->getWidth(),
+                        $height,
+                        [0, $y]
+                    );
+                    $white = Image::getImagine()->create(new Box($width, $height));
+                    $image = $white->paste($image, new Point(-$x, 0));
                 }
                 elseif ($x < 0){
                     $image = Image::crop(
